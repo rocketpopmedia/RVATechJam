@@ -1,0 +1,761 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*	Sass Stylesheet */
+/*	PAGE STYLES */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: source-sans-pro, helvetica, arial, sans-serif;
+  font-size: 1.6em;
+  line-height: 2.4em;
+}
+#header-left {
+	position: fixed;
+	z-index: 200;
+	/*margin-top: 9%;*/
+}
+.yellow {
+	background: #f7af3b;
+	width: 100%;
+	margin: -120px 0px 0px -80px;	
+}
+#pg-container {
+  padding: 0;
+}
+#pg-container header {
+  line-height: 5em;
+  text-align: center;
+}
+#pg-container header .logo {
+  width: 60%;
+}
+#pg-container header .logo img {
+  width: 100%;
+  margin-top: 0;
+  margin-left:0;
+  padding-bottom: 0;
+}
+#pg-container header .logo a img:hover {
+  opacity:.5;
+}
+#pg-container header nav#desktop li {
+  /*display: inline-block;*/
+  padding-right: 10px;
+}
+#pg-container header nav#desktop li a{
+	text-decoration: none;
+	color: #000;
+}
+#pg-container header nav#desktop ul a:hover{
+	opacity: .5;
+}
+#pg-container header nav#mobile {
+  display: block;
+  margin-top: 1em;
+  width: 40%;
+}
+#pg-container header nav#mobile #toggle-bar {
+  height: 4em;
+}
+#pg-container header nav#mobile .navicon {
+  float: right;
+  height: 30px;
+  width: 34px;
+  margin: 8px 0;
+  border-top: 18px double #000;
+  border-bottom: 6px solid #000;
+  font-size: 0;
+}
+#pg-container header nav#mobile ul {
+  padding: 5px 0;
+  margin: 0;
+  background-color: #000;
+  font-size: 1em;
+  width: 100%;
+  float: left;
+  position: absolute;
+  margin-left: 0;
+}
+#pg-container header nav#mobile ul li {
+  clear: both;
+  list-style: none;
+}
+#pg-container header nav#mobile ul li a {
+  display: block;
+  margin: 2px 0;
+  padding: 10px 0 10px 8px;
+  color: #fff;
+  text-decoration: none;
+}
+#pg-container header nav#mobile ul li a:hover {
+  text-decoration: none;
+}
+#pg-container header nav#mobile ul ul {
+  font-size: small;
+}
+#pg-container header nav#mobile ul ul li {
+  margin-left: 0px;
+}
+#pg-container header nav#mobile ul ul li a {
+  background-color: #333;
+  padding-left: 8px;
+}
+#pg-container header nav#mobile ul ul li a:before {
+  content: "2192";
+  padding-right: 8px;
+}
+#pg-container article {
+  line-height: 2em;
+  text-align: center;
+}
+#pg-container aside {
+  line-height: 2em;
+  text-align: center;
+}
+#pg-container footer {
+  line-height: 15em;
+  text-align: center;
+  height: 0px;
+}
+.WhatsATechJamPageWrapper{
+	background: #047695;
+	background-repeat: repeat; 
+	height: auto;
+    position: relative;
+    margin-left: 0%;
+    /*top: -2.5em;*/
+}
+.frontPageContainer {
+  background:#e6d2e7;
+  background-image: url(http://rvatechjam.rpmdevserver.com/wp-content/themes/rva-tech-jam/img/Musicnotes-1-purple.png);
+  background-repeat: repeat; 
+  height: 100vh;
+  position: relative
+}
+.WhatsATechJamPageContainer{
+	background: #047695;
+	background-repeat: repeat; 
+	height: 100vh;
+    position: relative;
+    float: right;
+    margin-left: 0%;
+    
+
+}
+.sayHelloContainer {
+	background: #ea5025;
+	background-repeat: repeat; 
+	height: 100vh;
+    position: relative;
+    float: right;
+    
+	
+}
+.companiesWeRockContainer {
+	background: #8a261d;
+	background-repeat: repeat; 
+	height: 100vh;
+    position: relative;
+    float: right;
+    
+}
+.aboutTechJamPageContainer {
+	background: #047695;
+	background-repeat: repeat; 
+	height: 1200px;
+    position: relative;
+}
+.mainMenu {
+  position: fixed;
+  top: 33%;
+  margin-left: 0;
+  width: 300px;
+  font-size: 1.5em;
+  z-index: 200;
+}
+.hamburger {
+  background:url(http://rvatechjam.rpmdevserver.com/wp-content/themes/rva-tech-jam/img/burger.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 25% 25%;
+  height: 300px;
+}
+#menu-main {
+	margin-top: -60%;
+	display: block;
+	visibility: visible;
+}
+#menu-main:hover{
+	visibility: visible;
+}
+.hamburger:hover {
+	opacity: .5
+}
+.hamburger:hover .mainMenu
+.hamburger:hover ~ .mainMenu {
+	visibility: visible;
+}
+.frontPageLogo {
+  margin-top: 0%;
+  display: block;
+  height: 100vh;
+}
+.frontPageLogo img {
+	height: auto;
+    max-width: 80%;
+    float: right;
+}
+.hamburgerButton{
+	width:100px;
+	height:10px;
+	border:solid 1px #000;
+	border-radius:5px;
+	background:#000;
+	margin:10px;
+}
+.hamburgerDesktop {
+	position: fixed;
+	top: 20em;
+	margin-left: 5%;
+    z-index: 200
+}
+.hamburgerDesktop ul a:hover {
+	opacity: .5;
+}
+.pageMarkers {
+  position: fixed;
+  /*width: 100px;*/
+  float: right;
+  top: 40%;
+  margin-left: 94%;
+  z-index: 200;
+}
+.circle {
+	  width: 26px;
+    height: 26px;
+    border: 3px solid #000;
+    border-radius: 13px;
+    margin-left: 12px;
+}
+.active > button:nth-child(1){
+    background: #B294C5;
+}
+.upArrow {
+	margin-top: -18%;
+    position: fixed;
+}
+.dnArrow {
+	margin-top: 18%;
+    position: fixed;
+}
+.whatsaTechJam {
+	position: relative;
+	margin-left: 22%;
+	color: #fff;
+	/*padding: 50px 50px 50px 150px;*/
+	z-index: 100;
+}
+.whatsaTechJam h2 {
+	font-size: 4em;
+	color: #fff;
+	line-height: 3em;
+	text-transform: lowercase;
+}
+.whatsaTechJam p {
+	font-size: 2em;
+	color: #fff;
+	line-height: 2em;
+	letter-spacing: 2px;
+}
+.learnMoreButton {
+	position: relative;
+	margin-left: 22%;
+	margin-top: 20%;
+	width: 12em;
+	height: 3em;
+	border: solid 3px #fff;
+	background: #047695;
+	color: #fff;
+	font-size: 1.5em;
+	letter-spacing: .2em;
+    word-spacing: 12px;
+	}
+.learnMoreButton a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5em;
+	
+}
+.learnMoreButton:hover{
+	color: #047695;
+	background: #fff;
+	border: solid 3px #fff;
+}
+.learnMoreButton2 {
+	position: relative;
+	margin-left: 22%;
+	margin-top: 27%;
+	width: 12em;
+	height: 3em;
+	border: solid 3px #fff;
+	background: #EA5025;
+	color: #fff;
+	font-size: 1.5em;
+	letter-spacing: .2em;
+    word-spacing: 12px;
+}
+.learnMoreButton2:hover{
+	color: #EA5025;
+	background: #fff;
+	border: solid 3px #fff;
+}
+
+.learnMoreButton3 {
+	position: relative;
+	margin-left: 22%;
+	margin-top: 35%;
+	width: 12em;
+	height: 3em;
+	border: solid 3px #fff;
+	background: #8a261d;
+	color: #fff;
+	font-size: 1.5em;
+	letter-spacing: .2em;
+    word-spacing: 12px;
+}
+.learnMoreButton3:hover{
+	color: #8a261d;
+	background: #fff;
+	border: solid 3px #fff;
+}	
+.plugImage > img:nth-child(1){
+	position: relative;
+	top: 10em;
+	margin-left: 20%;	
+}
+.sayHelloArticle {
+	position: relative;
+	margin-left: 22%;
+	top: 5em;
+	color: #fff;
+}
+.sayHelloArticle h2 {
+	font-size: 4em;
+	color: #fff;
+	line-height: 3em;
+	text-transform: lowercase;
+	}
+.sayHelloArticle p {
+	font-size: 2em;
+	color: #fff;
+	line-height: 2em;
+	letter-spacing: 2px;
+}
+.companiesArticle {
+	position: relative;
+	margin-left: 22%;
+	top: 5em;
+	color: #fff;
+}
+.companiesArticle h2 {
+	font-size: 4em;
+	color: #fff;
+	line-height: 3em;
+	text-transform: lowercase;
+}
+.companiesArticle p {
+	font-size: 2em;
+	color: #fff;
+	line-height: 2em;
+	letter-spacing: 2px;
+}
+.whatsaTechJamArticle {
+	position: relative;
+	margin-left: 45%;
+	top: 12.5em;
+	color: #fff;
+	/*padding: 50px 50px 50px 150px;*/
+	z-index: 100;
+}
+.whatsaTechJamArticle h2{
+	font-size: 4em;
+	color: #fff;
+	line-height: 3em;
+}
+.whatsaTechJamArticle p{
+	font-size: 2em;
+	color: #fff;
+	line-height: 2em;
+	letter-spacing: 2px;
+}
+.liteBulbContainer{
+	background: #85d5f3;
+	margin-top: 260px;
+}
+.helloBox {
+	background: #f7af3b;
+	text-align: center;
+	padding: 80px;
+	margin-top: 0px;
+}
+.helloBox h3 {
+	font-size: 3em;
+}
+.whatsatechjamtoplogo {
+	margin: 8% 0 0 5%;
+}
+/**********************************************/
+
+
+
+/********************************************************************MEDIA QUERIES***************************************************************/
+@media only screen and (min-width: 768px) {
+  #pg-container header {
+    text-align: left;
+    position: absolute;
+	margin-left: 5em;
+	margin-top: 3%
+  }
+  #pg-container header .logo {
+    width: 60%;
+  }
+  #pg-container header .logo img {
+    width: 275px;
+  }
+  #pg-container article {
+    line-height: 2em;
+    text-align: left;
+  }
+  #pg-container aside {
+    line-height: 2em;
+    text-align: left;
+  }
+  
+ }
+  /************************************************************max 2100px *********************************************************************/
+@media only screen and (max-width: 2100px){
+	.whatsaTechJamArticle h2 {
+    	font-size: 3em;
+    }
+    .whatsaTechJamArticle p {
+    	font-size: 1.5em;
+		line-height: 1.5em;
+		letter-spacing: 1.5px;
+	}
+	.yellow {
+		margin: -120px 0px 0px -80px;
+	}
+	
+}
+  /************************************************************max 1700px *********************************************************************/
+@media only screen and (max-width: 1700px){
+	.whatsaTechJam h2 {
+    	font-size: 3em;
+		line-height: 3em;
+    }
+    .whatsaTechJam p {
+    	letter-spacing: 2px;
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+	.sayHelloArticle h2 {
+		font-size: 3em;
+		line-height: 3em;	
+	}
+	.sayHelloArticle p {
+		letter-spacing: 2px;
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+	.companiesArticle h2 {
+		font-size: 3em;
+		line-height: 3em;
+    }
+    .companiesArticle p {
+		letter-spacing: 2px;
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+}
+  /************************************************************max 1550px *********************************************************************/
+@media only screen and (max-width: 1550px){
+	.whatsaTechJamArticle h2 {
+    	font-size: 2.5em;
+	}
+	.whatsaTechJamArticle p {
+    	font-size: 1.2em;
+		line-height: 1.3em;
+		letter-spacing: 2.2px;
+	}
+	.whatsatechjamtoplogo {
+    margin: 10% 0px 0px 5%;
+}
+}
+ /************************************************************max 1350px *********************************************************************/
+@media only screen and (max-width: 1350px){
+  	#pg-container header .logo img {
+    	width: 180px;
+	}
+	.hamburger {
+    	background: url('http://rvatechjam.rpmdevserver.com/wp-content/themes/rva-tech-jam/img/burger.svg') no-repeat scroll 0% 0% / 20% 20% transparent;
+		height: 250px;
+	}
+	.mainMenu {
+		font-size: 1.2em;
+		line-height: 2.8em;
+	}
+	.circle {
+    	width: 20px;
+		height: 20px;
+		border: 2px solid #000;
+		border-radius: 10px;
+		margin-left: 12px;
+	}
+	.upArrow {
+    	margin-top: -18%;
+    }
+	.upArrow img{
+		width: 80%;
+	}
+	.dnArrow {
+    margin-top: 10%;
+    }
+	.dnArrow img{
+		width: 80%;
+	}
+	.whatsaTechJam {
+		margin-top: 7%;
+	}
+	.whatsaTechJam h2 {
+    	font-size: 2em;
+		line-height: 2em;
+		letter-spacing: 3px;
+	}
+	.whatsaTechJam p {
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    }
+    .sayHelloArticle h2 {
+    	font-size: 2em;
+		line-height: 2em;
+		letter-spacing: 3px;
+    }
+    .sayHelloArticle p {
+    	letter-spacing: 1px;
+		font-size: 1.1em;
+		line-height: 1.5em;
+    }
+    .companiesArticle h2 {
+    	font-size: 2em;
+		line-height: 2em;
+		letter-spacing: 3px;
+    }
+    .companiesArticle p {
+    	letter-spacing: 1px;
+		font-size: 1.1em;
+		line-height: 1.5em;
+    }
+    .whatsatechjamtoplogo {
+    	margin: 14% 0px 0px 5%;
+	}
+	.whatsaTechJamArticle h2 {
+		font-size: 2em;
+	}
+	.whatsaTechJamArticle p {
+		font-size: 1em;
+	}
+	.whatsaTechJamArticle {
+		margin-left: 45%;
+		padding: 0;
+	}
+}
+ /************************************************************max 1024px *********************************************************************/
+@media only screen and (max-width: 1024px){
+	.whatsaTechJamArticle h2 {
+    	font-size: 1.3em;
+		letter-spacing: 4px;
+	}
+	.whatsaTechJamArticle p {
+    	font-size: .8em;
+	}
+	.whatsatechjamtoplogo {
+    	margin: 14% 0px 0px 5%;
+	}
+	
+}
+ /************************************************************max 961px *********************************************************************/
+@media only screen and (max-width: 961px){
+  	#pg-container header .logo img {
+    	width: 150px;
+	}
+	.whatsatechjamtoplogo {
+    	margin: 20% 0px -6% 5%;
+	}
+	#pg-container header .logo img {
+		margin-bottom: 40px;
+	}
+  	.mainMenu {
+    	font-size: 1.2em;
+		line-height: 2.0em;
+	}
+	.upArrow img {
+    	width: 50%;
+	}
+	.dnArrow img {
+    	width: 50%;
+	}
+	.circle {
+    	width: 15px;
+		height: 15px;
+		border: 2px solid #000;
+		border-radius: 7.5px;
+		margin-left: 2px;
+	}
+	.upArrow {
+    	margin-top: -4%;
+	}
+	.dnArrow {
+    	margin-top: 2%;
+	}
+	.pageMarkers {
+		top: 26%;
+	}
+	.learnMoreButton {
+		font-size: .9em;
+	}
+	.learnMoreButton2 {
+		font-size: .9em;
+	}
+	.learnMoreButton3 {
+		font-size: .9em;
+	}
+	.whatsaTechJam h2 {
+    	font-size: 1.2em;
+		line-height: 1.2em;
+		letter-spacing: 2px;
+		padding-bottom: 10px;
+	}
+	.whatsaTechJam p {
+    	letter-spacing: 1px;
+		font-size: .8em;
+		line-height: 1.5em;
+	}
+	.sayHelloArticle h2 {
+		font-size: 1.2em;
+		line-height: 1.2em;
+		letter-spacing: 2px;
+		padding-bottom: 10px;
+	}
+	.sayHelloArticle p {
+		letter-spacing: 1px;
+		font-size: .8em;
+		line-height: 1.5em;
+	}
+	.companiesArticle h2 {
+		font-size: 1.2em;
+		line-height: 1.2em;
+		letter-spacing: 2px;
+		padding-bottom: 10px;
+	}
+	.companiesArticle p {
+		letter-spacing: 1px;
+		font-size: .8em;
+		line-height: 1.5em;
+	}
+}
+ /************************************************************max 768px *********************************************************************/
+@media only screen and (max-width: 768px){
+  .hamburger {
+  	display: none;
+  }
+  #header-left {
+  	margin-left: -5%;
+  }
+  #pg-container header nav#mobile ul li a {
+    display: block;
+    margin: 2px 300px 0 0;
+    padding: 10px 0px 10px 8px;
+    color: #FFF;
+    text-decoration: none;
+    line-height: 30px;
+    z-index: 500;
+  }
+  .circle {
+  display: none;
+  }
+  #header-left {
+    margin-left: 0;
+  }
+  .whatsatechjamtoplogo {
+    margin: 26% 0px -6% 5%;
+  }
+  .whatsaTechJamArticle {
+  	margin-left: 10%;
+  	text-align: left;
+  }
+}
+ /************************************************************max 641px *********************************************************************/
+@media only screen and (max-width: 641px){
+  
+}
